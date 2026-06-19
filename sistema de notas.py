@@ -3,13 +3,14 @@ print("¡Bienvenido al sistema de notas!")
 notas = ["1","2","3","4","5","6","7"]
 opcion = 0
 
-while opcion != 5:
+while opcion != 6:
     print("\n=== MENU PRINCIPAL ===") 
     print("1. Registrar una nota")
     print("2. Mostrar todas la notas")
     print("3. Mostrar promedio de curso")
     print("4. Mostrar nota mas alta y baja")
-    print("5. Salir")
+    print("5- Sumar las notas")
+    print("6. Salir")
     
     try:
         opcion = int(input("Ingrese una opcion: "))
@@ -31,9 +32,12 @@ while opcion != 5:
         elif opcion == 4:
             print("Mostrar notas altas:", nuevas_notas)
             print("Mostrar notas bajas:", nuevas_notas)
-            
 
         elif opcion == 5:
+            print("Sumar las notas ", notas + nuevas_notas)    
+            
+
+        elif opcion == 6:
             print("\n=== FIN DEL PROGRAMA ===")
             print("Gracias por utilizar nuestro software, hasta la proxima.")   
               
